@@ -14,6 +14,9 @@ class EncoderCNN(nn.Module):
         modules = list(resnet.children())[:-1]
         self.resnet = nn.Sequential(*modules)
         self.embed = nn.Linear(resnet.fc.in_features, embed_size)
+        self.batch = nn.BatchNorm1d(embed_size, momentum=0.01)
+        self.embed.weight.data.normal_(0., 0.02)
+        self.embed.bias.data.fill_(0)
         
     def forward(self, images):
         features = self.resnet(images)

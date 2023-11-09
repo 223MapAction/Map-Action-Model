@@ -6,6 +6,7 @@ class DecoderRNN(nn.Module):
     def __init__(self, embed_size, hidden_size, vocab_size, num_layers=1):
         super(DecoderRNN, self).__init__()
         self.embed_size = embed_size
+        self.drop_prob = 0.2
         self.hidden_size = hidden_size
         self.vocab_size = vocab_size
         self.num_layers = num_layers
@@ -15,7 +16,13 @@ class DecoderRNN(nn.Module):
                             num_layers = self.num_layers,
                             batch_first = True
                             )
-        self.fc = nn.Linear( self.hidden_size, self.vocab_size)
+        self.dropout = nn.Dropout(self.drop_prob)
+        self.embed = nn.Embeding(self.vocab_size, self.embed_size)
+        self.linear = nn.Linear( self.hidden_size, self.vocab_size)
+        self.embed.weight.data.uniform_(-0.1, 0.1)
+        self.linear.weight.data.uniform_(-0.1, 0.1)
+        self.linear.bias.data.fill_(0)
+        
         
     
     def init_hidden(self, batch_first):
@@ -29,5 +36,5 @@ class DecoderRNN(nn.Module):
         embeds = self.word_embedding(captions)
         inputs = torch.cat((features.unsqueeze(dim=1), embeds), dim=1)
         lstm_out, self.hidden = self.lstm(inputs, self.hidden)
-        outputs = self.fc(lstm_out)
+        outputs = self.linear(lstm_out)
         return outputs
