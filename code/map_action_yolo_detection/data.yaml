@@ -1,7 +1,0 @@
-
-train: /home/mapaction/Documents/Exp-data/YOLO/images/
-val: /home/mapaction/Documents/Exp-data/YOLO/images/
-test: /home/mapaction/Documents/Exp-data/YOLO/images/
-
-nc: 2
-names: ['D-Liquide', 'D-Solide']

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Contrubition-guideline - Map Action Model</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../assets/_mkdocstrings.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Map Action Model</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Welcom</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../systemArch/" class="nav-link">System Arch</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../imageAnnotation/" class="nav-link">Image annotation process</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../dataPreprocessing/" class="nav-link">Data pre-processing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../modelFinetuning/" class="nav-link">Model fine tuning</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../dataFetching/" class="nav-link">Data fetching</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../modelEvaluation/" class="nav-link">Model inference</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../modelTraining/" class="nav-link">Model training</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../install/" class="nav-link">Setup and Run</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Contrubition-guideline</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../install/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>Map Action Contribution Guidelines</p>
+<p>Welcome to Map Action! We're excited about your interest in contributing to our open-source project. These guidelines will help you understand how to effectively contribute to our codebase.</p>
+<p>About Map Action</p>
+<p>Map Action is a Bamako-based trailblazer in using mapping technology to tackle environmental challenges and solve urban issues. Our innovative approach began by addressing Water, Sanitation, and Hygiene (WASH) problems and has grown to encompass various sectors through collaboration with civil society, governments, NGOs, and private entities.</p>
+<p>Our sustainable business model includes paid subscriptions for organizations that rely on our data to gain actionable insights across diverse domains. This model allows us to continuously enhance our offerings.</p>
+<p>Contributing</p>
+<p>We welcome contributions of all shapes and sizes! Here are the different ways you can get involved:</p>
+<pre><code>Report bugs and request features: Identify any issues you encounter while using our tools. You can report them directly on GitHub Issues https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues.
+Submit code changes: If you have improvements or new features in mind, you can contribute code by creating pull requests (PRs).
+Write documentation or tutorials: Enhance our documentation to make it easier for others to understand and use our tools.
+Help with code reviews and testing: Lend your expertise by reviewing pull requests submitted by others and assisting with testing efforts.
+</code></pre>
+<p>Finding Issues to Work On</p>
+<pre><code>Browse our issue tracker on GitHub Issues https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues to find existing issues.
+Look for issues labeled "help wanted" or those categorized as bugs or enhancements that you're interested in tackling.
+</code></pre>
+<p>Making Changes</p>
+<pre><code>Fork the Repository:
+    Visit the Map Action project on GitHub: https://github.com/223MapAction
+    Click on the "Fork" button to create your own copy of the repository.
+
+Create a Branch:
+    Clone your forked repository to your local machine.
+    Create a new branch for your specific changes.
+    Use a descriptive branch name that reflects your contribution (e.g., "fix-map-loading-bug").
+
+Code and Commit:
+    Make your changes to the codebase.
+    Write clear and concise commit messages that describe your modifications.
+
+Testing:
+    Ensure your changes don't introduce any regressions.
+    We use pytest and flake8 for testing. Make sure your code passes all tests before submitting a pull request.
+</code></pre>
+<p>Submitting Pull Requests</p>
+<pre><code>Push to Your Branch:
+    Once you're satisfied with your changes, push your local branch to your forked repository on GitHub.
+
+Open a Pull Request:
+    Navigate to your forked repository on GitHub and go to the "Pull Requests" tab.
+    Click on "New pull request" and select the branch containing your changes.
+    Create a pull request with a clear and descriptive title and explanation of your modifications.
+    Mention any issues your pull request addresses.
+
+Code Review:
+    Our internal code review process involves two Map Action developers.
+    They'll review your pull request and provide feedback or suggestions for improvement.
+
+Merge:
+    Once your pull request is approved and any necessary changes are made, it will be merged into the main codebase.
+</code></pre>
+<p>Additional Notes</p>
+<pre><code>License: All our repositories use the GPL-3.0 license. Ensure your contributions comply with the license terms.
+Code of Conduct: We value a respectful and inclusive environment. Please familiarize yourself with our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing. 
+Appreciation: We appreciate all contributions, regardless of their scope. Thank you for helping us improve Map Action!
+</code></pre>
+<p>We look forward to your contributions!</p>
+<p>This tailored guide incorporates the information you provided, making it specific to the Map Action project and its contribution workflow.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
